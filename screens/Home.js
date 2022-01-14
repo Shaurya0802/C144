@@ -66,9 +66,11 @@ export default class HomeScreen extends React.Component {
                 <View style={styles.container}>
                     <View style={styles.headerContainer}>
                         <Header 
-                            centerComponent={{text: "Movie Recommended", style = styles.headerTitle}}
-                            rightComponent={{icon: "search", color: "#fff"}}
+                            centerComponent={{text: "Movies", style: styles.headerTitle}}
+                            rightComponent={{icon: "movie-open", type="material-community", color: "#fff"}}
                             backgroundColor={"#d500f9"}
+                            onPress={() => {this.props.navigation.navigate("RecommendedMovies")}}
+                            containerStyle={{flex: 1}}
                         />
                     </View>
             
